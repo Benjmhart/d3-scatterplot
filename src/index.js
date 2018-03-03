@@ -184,7 +184,7 @@ fetch(
 
     const datapoints = svg
       .selectAll(".datapoints")
-      .on("mouseover", () => handleMouseOver());
+      .on("mouseover", (d) => handleMouseOver(d));
 
     datapoints.on("mouseout", () => handleMouseOut());
   });
